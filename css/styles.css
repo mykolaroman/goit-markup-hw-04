@@ -23,6 +23,7 @@ body {
         width: 1158px;
         padding: 0 15px;
         margin: 0 auto;
+
     }
     
     .header-container {
@@ -36,6 +37,7 @@ body {
         width: 1440px;
     flex-shrink: 0;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
     }
     .header-navigation {
         display: flex;
@@ -67,6 +69,21 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .current{
+position: relative;
+color: #404BBF;
+    }
+    .current::after {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        content: "";
+        background-color: #404BBF;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
     }
     .nav-link:hover,
     .nav-link:focus {
@@ -86,6 +103,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
     .address-link:hover,
     .address-link:focus{
@@ -94,8 +113,20 @@ body {
     /* main section----H1-----*/
     .background {
         background-color: #2E2F42;
-        text-align: center;
-        padding: 188px 0 188px;
+
+
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office\ 1\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            padding: 188px 0 188px;
+            max-width: 1440px;
+            background-repeat: no-repeat;
+            background-position: center; 
+            background-size: cover;
     }
 
     .qwerty{
@@ -124,6 +155,7 @@ body {
         border-radius: 4px;
         margin: 0 auto;
         cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .first-button:hover,
     .first-button:focus{
@@ -184,6 +216,7 @@ body {
         background-color: #FFF;
         width: calc((100% - 72px) / 4);
         border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
     .team-img {
     
@@ -269,6 +302,10 @@ body {
         padding: 100px 0;
     
     }
+    .footer-all {
+        display: flex;
+        align-items: baseline;
+    }
     .logo {
         color: #4D5AE5;
     font-size: 18px;
@@ -296,6 +333,54 @@ body {
     letter-spacing: 0.02em;
     max-width: 264px;
     }
+    .footer-container-link {
+
+    }
+    .footer-social {
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    }
+    .footer-icon {
+        display: flex; 
+        gap: 16px;
+
+    }
+    .footer-icon-link {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .footer-svg {
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .footer-svg:hover,
+    .footer-svg:focus {
+        background-color: #31d0aa;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .footer-icon-svg {
+        fill: #f4f4fd;
+    }
+
+    
+.container-footer {
+    
+
+    align-items: baseline;
+    margin-right: 120px;
+}
     /* ----------- */
     
     .visually-hidden {
