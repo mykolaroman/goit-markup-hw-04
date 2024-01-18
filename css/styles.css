@@ -113,7 +113,7 @@ color: #404BBF;
     /* main section----H1-----*/
     .background {
         background-color: #2E2F42;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office\ 1\ \(1\).jpg);
@@ -169,21 +169,29 @@ color: #404BBF;
         background-color: #FFF;
         padding: 120px 0;
     }
-    .feature-container-icon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 112px;
-        background-color: #f4f4fd;
-        border-radius: 4px; 
-        margin-bottom: 8px; 
-    }
+    
     .feature-list {
         display: flex;
         gap: 24px;
     }
     .feature-item {
         width: calc((100% - 72px) / 4); 
+    }
+    .feature-icondiv {
+display: flex;
+align-items: center; 
+justify-content: center; 
+height: 112px;
+background-color: #f4f4fd;
+border-radius: 4px; 
+margin-bottom: 8px; 
+
+    }
+    .feature-svg {
+
+    }
+    .feature-icon-svg {
+
     }
     .feature-name {
         color: #2E2F42;
